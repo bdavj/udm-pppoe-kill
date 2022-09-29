@@ -20,5 +20,11 @@ curl -Lo /mnt/data/ppp/pppoekill.py https://raw.githubusercontent.com/bdavj/udm-
 chmod +x /mnt/data/on_boot.d/pppoekill.sh
 ```
 
+The script will run on next boot, or you could start it with
+
+```
+nohup /mnt/data/on_boot.d/pppoekill.sh &
+```
+
 Once installed, change the interface at the top of `/mnt/data/on_boot.d/pppoekill.sh` to your required WAN interface.
 By default, this is set to eth9 (SFP WAN on a UDM-SE).
