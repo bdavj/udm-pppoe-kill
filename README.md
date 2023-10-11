@@ -27,10 +27,10 @@ chmod +x /data/on_boot.d/pppoekill.sh
 The script will run on next boot, or you could start it with
 
 ```
-nohup /mnt/data/on_boot.d/pppoekill.sh &
+nohup /data/on_boot.d/pppoekill.sh &
 ```
 
-Once installed, change the interface at the top of `/mnt/data/on_boot.d/pppoekill.sh` to your required WAN interface.
+Once installed, change the interface at the top of `/data/on_boot.d/pppoekill.sh` to your required WAN interface.
 By default, this is set to eth9 (SFP WAN on a UDM-SE).
 
 # Contributing
