@@ -19,9 +19,9 @@ Drop the contents repo into `/mnt/data/ppp`. Copy the `pppoekill.sh` script to `
 Alternatively:
 ```
 mkdir /mnt/data/ppp
-curl -Lo /mnt/data/on_boot.d/pppoekill.sh https://raw.githubusercontent.com/bdavj/udm-pppoe-kill/main/pppoekill.sh
+curl -Lo /data/on_boot.d/pppoekill.sh https://raw.githubusercontent.com/bdavj/udm-pppoe-kill/main/pppoekill.sh
 curl -Lo /mnt/data/ppp/pppoekill.py https://raw.githubusercontent.com/bdavj/udm-pppoe-kill/main/pppoekill.py
-chmod +x /mnt/data/on_boot.d/pppoekill.sh
+chmod +x /data/on_boot.d/pppoekill.sh
 ```
 
 The script will run on next boot, or you could start it with
