@@ -19,18 +19,18 @@ Drop the contents repo into `/mnt/data/ppp`. Copy the `pppoekill.sh` script to `
 Alternatively:
 ```
 mkdir /mnt/data/ppp
-curl -Lo /mnt/data/on_boot.d/pppoekill.sh https://raw.githubusercontent.com/bdavj/udm-pppoe-kill/main/pppoekill.sh
+curl -Lo /data/on_boot.d/pppoekill.sh https://raw.githubusercontent.com/bdavj/udm-pppoe-kill/main/pppoekill.sh
 curl -Lo /mnt/data/ppp/pppoekill.py https://raw.githubusercontent.com/bdavj/udm-pppoe-kill/main/pppoekill.py
-chmod +x /mnt/data/on_boot.d/pppoekill.sh
+chmod +x /data/on_boot.d/pppoekill.sh
 ```
 
 The script will run on next boot, or you could start it with
 
 ```
-nohup /mnt/data/on_boot.d/pppoekill.sh &
+nohup /data/on_boot.d/pppoekill.sh &
 ```
 
-Once installed, change the interface at the top of `/mnt/data/on_boot.d/pppoekill.sh` to your required WAN interface.
+Once installed, change the interface at the top of `/data/on_boot.d/pppoekill.sh` to your required WAN interface.
 By default, this is set to eth9 (SFP WAN on a UDM-SE).
 
 # Contributing
