@@ -14,13 +14,13 @@ The router is then able to re-establish a PPPoE session.
 # Installation
 
 This is designed to be used with the [UDM Boot Script](https://github.com/unifi-utilities/unifios-utilities/tree/main/on-boot-script).
-Drop the contents repo into `/mnt/data/ppp`. Copy the `pppoekill.sh` script to `/mnt/data/on_boot`
+Drop the contents repo into `/data/ppp`. Copy the `pppoekill.sh` script to `/data/on_boot`
 
 Alternatively:
 ```
-mkdir /mnt/data/ppp
+mkdir /data/ppp
 curl -Lo /data/on_boot.d/pppoekill.sh https://raw.githubusercontent.com/bdavj/udm-pppoe-kill/main/pppoekill.sh
-curl -Lo /mnt/data/ppp/pppoekill.py https://raw.githubusercontent.com/bdavj/udm-pppoe-kill/main/pppoekill.py
+curl -Lo /data/ppp/pppoekill.py https://raw.githubusercontent.com/bdavj/udm-pppoe-kill/main/pppoekill.py
 chmod +x /data/on_boot.d/pppoekill.sh
 ```
 
